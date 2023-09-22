@@ -1,2 +1,0 @@
-# talous
-Taloustietoa

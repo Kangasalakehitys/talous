@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,7 +52,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./talous.html" rel="next">
+<link href="./maa_ja_metsatalous.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Vaihda sivupalkki" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Alkusanat</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lahteet.html">Liitteet</a></li><li class="breadcrumb-item"><a href="./lahteet.html">Lähteet</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Vaihda sivupalkki" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Alkusanat</span></a>
   </div>
 </li>
@@ -291,7 +310,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lahteet.html" class="sidebar-item-text sidebar-link">
+  <a href="./lahteet.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lähteet</span></a>
   </div>
 </li>
@@ -303,40 +322,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Sisällysluettelo</h2>
-   
-  <ul>
-  <li><a href="#alkusanat" id="toc-alkusanat" class="nav-link active" data-scroll-target="#alkusanat">Alkusanat</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Kangasalakehitys/tilastokirjateams/edit/main/index.qmd" class="toc-action">Muokkaa sivua</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Talouden vertailu 2022</h1>
-<p class="subtitle lead">0.4</p>
+<h1 class="title">Lähteet</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Tekijä</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kangasalan kaupunki </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Julkaistu</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">19-10-2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -344,14 +344,21 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-kirjanpito_ja_tilinpaatos" class="csl-entry" role="listitem">
+Kuntaliitto. 2023. <em>Kirjanpito Ja Tilinpäätös</em>. Kuntaliitto. <a href="https://www.kuntaliitto.fi/talous/kirjanpito-ja-tilinpaatos">https://www.kuntaliitto.fi/talous/kirjanpito-ja-tilinpaatos</a>.
+</div>
+<div id="ref-kuntatalouden_abc" class="csl-entry" role="listitem">
+Tutkihallintoa.fi. 2023. <em>Kuntatalouden ABC</em>. Tutkihallintoa.fi.
+<a href="https://www.tutkihallintoa.fi/kuntatalouden-abc/">https://www.tutkihallintoa.fi/kuntatalouden-abc/</a>.
+</div>
+<div id="ref-valtiokonttori_palveluluokat" class="csl-entry" role="listitem">
+Valtiokonttori. 2023. <em>Kunnan Tilinpäätöstiedot
+Palveluluokkakohtaisesti</em>. Valtiokonttori. <a href="https://www.tutkihallintoa.fi/kunnat/talous/kunnan-tilinpaatostiedot-palveluluokkakohtaisesti-kayttotalous-investoinnit/">https://www.tutkihallintoa.fi/kunnat/talous/kunnan-tilinpaatostiedot-palveluluokkakohtaisesti-kayttotalous-investoinnit/</a>.
+</div>
+</div>
 
-<section id="alkusanat" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="alkusanat">Alkusanat</h2><p><img src="themes/images/kangasala/kangasala_cover.png" title="{{< var general.title >}} {{< var general.year >}}" class="quarto-cover-image img-fluid"></p>
-<p>Tämä kuntatalouden vertailu on koostettu Valtiokonttorin rajapinnalta saatavista taloustiedoista. Taloustietoihin on yhdistetty Tilastokeskuksen väestötiedoista asukasmäärätieto. Talouden vertailussa voidaan näiden helpommin suhteuttaa eri palveluluokkia ja kuntia keskenään. Tuloksia tarkisteltaessa tulee kuitenkin huomioida, että palveluluokissa on kunnittain vielä eroavaisuuksia eli miten kunnan sisällä palveluita n järjestetty ja organisoitu. Kuitenkin palveluluokkakohtainen vertailu antaa tietoa kuntien välisistä erovaisuuksista.</p>
-<p>Kuntatalouden vertailukirja on organisoitu niin, että ensin luvussa yksi (1) on kuntavertailu ylätasolla, perustuen Valtiokonttorin neljännesvuositietoihin (KKNR). Luvusta kaksi (2) lähtien vertailu on palveluluokittain ja kunnittain.</p>
 
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -589,11 +596,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./maa_ja_metsatalous.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Maa- ja metsätaloustuotteet</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./talous.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Kuntien neljännesvuosiraportointi - vertailuajankohta (vuoden 2022 tiedot)</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -608,7 +615,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  Kangasalan kaupunki 2022
   </li>  
 </ul>
-    </div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Kangasalakehitys/tilastokirjateams/edit/main/lahteet.qmd" class="toc-action">Muokkaa sivua</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

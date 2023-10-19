@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fi" xml:lang="fi"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Juuso Heinisuo">
+<meta name="keywords" content="Talouden vertailua, Kangasalan kaupunki">
+<meta name="description" content="Tämä on talouden kuntavertailupaketti.. Tilastokirja on julkaistu LGPL-2.1-or-later lisenssi alla. Copyright 2023 Kangasalan kaupunki">
+<title>Kangasalan kaupunki - Talouden vertailu 2022</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./puistot.html" rel="next">
+<link href="./ymparistonsuojelu.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Ei tuloksia",
+    "search-matching-documents-text": "tulokset",
+    "search-copy-link-title": "Kopioi linkki hakuun",
+    "search-hide-matches-text": "Piilota loput tulokset",
+    "search-more-match-text": "tulos tässä dokumentissa",
+    "search-more-matches-text": "tulosta tässä dokumentissa",
+    "search-clear-button-title": "Tyhjennä",
+    "search-detached-cancel-button-title": "Peruuta",
+    "search-submit-button-title": "Lähetä",
+    "search-label": "Hae"
+  }
+}</script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.0/htmlwidgets.js"></script><script src="site_libs/plotly-binding-4.10.1/plotly.js"></script><script src="site_libs/typedarray-0.1/typedarray.min.js"></script><script src="site_libs/jquery-3.5.1/jquery.min.js"></script><link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script><link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Vaihda sivupalkki" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./kadut.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Kadut ja yleiset alueet</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Vaihda sivupalkki" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./themes/images/kangasala/kangasala_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Talouden vertailu 2022</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/Kangasalakehitys/tilastokirjateams" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=%7Curl%7C">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=%7Curl%7C">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=%7Curl%7C">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+</div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Hae"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alkusanat</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./talous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Kuntien neljännesvuosiraportointi - vertailuajankohta (vuoden 2022 tiedot)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./palveluluokat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./yleishallinto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Yleishallinto ja vaalit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./alueiden_kehitys.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Alueiden kehittäminen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./elinkeinot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Elinkeinot, työllisyys ja tukipalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./joukkoliikenne.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joukkoliikenne ja muut liikkumisen palvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./varhaiskasvatus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Varhaiskasvatus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./perusopetus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Perusopetus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kansalaisopistokoulutus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kansalaisopistokoulutus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lukio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Lukio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./muu_opetus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Muu opetus- ja kasvatustoiminta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nuorisopalvelut.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Nuorisopalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kulttuuri_ja_musiikki.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kulttuuri- ja musiikkipalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kirjasto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Kirjastopalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kaavoitus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Kaavoitus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liikunta_ja_ulkoilu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Liikunta- ja ulkoilupalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./asuminen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Asumisen palvelut yhteensä</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ymparistonsuojelu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Ympäristönsuojelu</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kadut.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Kadut ja yleiset alueet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./puistot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Puistot ja viheralueet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rakennuttaminen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Kunnallinen rakennuttaminen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./maaomaisuus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Maaomaisuuden hallinta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vesihuolto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Vesihuolto</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./maa_ja_metsatalous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Maa- ja metsätaloustuotteet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Liitteet</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Vaihda osio">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lahteet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lähteet</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sisällysluettelo</h2>
+   
+  <ul>
+<li><a href="#kadut-ja-yleiset-alueet" id="toc-kadut-ja-yleiset-alueet" class="nav-link active" data-scroll-target="#kadut-ja-yleiset-alueet"><span class="header-section-number">19.1</span> Kadut ja yleiset alueet</a></li>
+  <li><a href="#pys%C3%A4k%C3%B6innin-j%C3%A4rjest%C3%A4minen-ja-valvonta" id="toc-pysäköinnin-järjestäminen-ja-valvonta" class="nav-link" data-scroll-target="#pys%C3%A4k%C3%B6innin-j%C3%A4rjest%C3%A4minen-ja-valvonta"><span class="header-section-number">19.2</span> Pysäköinnin järjestäminen ja valvonta</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Kangasalakehitys/tilastokirjateams/edit/main/kadut.qmd" class="toc-action">Muokkaa sivua</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Kadut ja yleiset alueet</span>
+</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><section id="kadut-ja-yleiset-alueet" class="level2" data-number="19.1"><h2 data-number="19.1" class="anchored" data-anchor-id="kadut-ja-yleiset-alueet">
+<span class="header-section-number">19.1</span> Kadut ja yleiset alueet</h2>
+<div class="cell" data-hash="kadut_cache/html/KKTPP - palveluluokkakohtainen raportti, Kadut ja yleiset alueet tbl_1f3ff0434b758b8b5e51778150c05ed5">
+<div class="cell-output-display">
+<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Kadut ja yleiset alueet</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">tili</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Kangasala - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Lempäälä - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nokia - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Ylöjärvi - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Pirkkala - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nurmijärvi - €</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Vihti - €</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3000-3199 Myyntituotot</td>
+<td style="text-align: center;">28 279</td>
+<td style="text-align: center;">689 483</td>
+<td style="text-align: center;">176 829</td>
+<td style="text-align: center;">1 791 126</td>
+<td style="text-align: center;">11 443</td>
+<td style="text-align: center;">240 316</td>
+<td style="text-align: left;">11 124</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3200-3299 Maksutuotot</td>
+<td style="text-align: center;">81 615</td>
+<td style="text-align: center;">329 577</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">124 980</td>
+<td style="text-align: center;">13 874</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3300-3399 Tuet ja avustukset</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">20 292</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">29 578</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3400-3559 Muut toimintatuotot</td>
+<td style="text-align: center;">6 748</td>
+<td style="text-align: center;">169 332</td>
+<td style="text-align: center;">63 615</td>
+<td style="text-align: center;">166</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">39 384</td>
+<td style="text-align: left;">10 331</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3600-3699 Valmistevarastojen muutos + (-)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3700-3799 Valmistus omaan käyttöön</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2 514 503</td>
+<td style="text-align: center;">5 014 303</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1 860 939</td>
+<td style="text-align: left;">44 342</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintatuotot</td>
+<td style="text-align: center; font-weight: bold;">116 642</td>
+<td style="text-align: center; font-weight: bold;">1 188 392</td>
+<td style="text-align: center; font-weight: bold;">260 736</td>
+<td style="text-align: center; font-weight: bold;">1 791 292</td>
+<td style="text-align: center; font-weight: bold;">136 489</td>
+<td style="text-align: center; font-weight: bold;">323 152</td>
+<td style="text-align: left; font-weight: bold;">21 455</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4000-4299 Henkilöstökulut</td>
+<td style="text-align: center;">-216 716</td>
+<td style="text-align: center;">-335 063</td>
+<td style="text-align: center;">-1 767 865</td>
+<td style="text-align: center;">-1 079 375</td>
+<td style="text-align: center;">-304 444</td>
+<td style="text-align: center;">-2 009 864</td>
+<td style="text-align: left;">-319 869</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4300-4499 Palvelujen ostot</td>
+<td style="text-align: center;">-1 358 425</td>
+<td style="text-align: center;">-1 692 645</td>
+<td style="text-align: center;">-2 418 319</td>
+<td style="text-align: center;">-5 775 858</td>
+<td style="text-align: center;">-986 128</td>
+<td style="text-align: center;">-4 114 355</td>
+<td style="text-align: left;">-655 163</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4300-4339 Asiakaspalvelujen ostot</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4340-4499 Muiden palvelujen ostot</td>
+<td style="text-align: center;">-1 358 425</td>
+<td style="text-align: center;">-1 692 645</td>
+<td style="text-align: center;">-2 418 319</td>
+<td style="text-align: center;">-5 775 858</td>
+<td style="text-align: center;">-986 128</td>
+<td style="text-align: center;">-4 114 355</td>
+<td style="text-align: left;">-655 163</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4500-4699 Aineet, tarvikkeet ja tavarat</td>
+<td style="text-align: center;">-215 865</td>
+<td style="text-align: center;">-415 024</td>
+<td style="text-align: center;">-1 267 096</td>
+<td style="text-align: center;">-1 983 611</td>
+<td style="text-align: center;">-240 770</td>
+<td style="text-align: center;">-824 538</td>
+<td style="text-align: left;">-575 272</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4670 Varastojen lisäys/vähennys</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4700-4799 Avustukset</td>
+<td style="text-align: center;">-94 772</td>
+<td style="text-align: center;">-32 475</td>
+<td style="text-align: center;">-80 769</td>
+<td style="text-align: center;">-259 531</td>
+<td style="text-align: center;">-138 701</td>
+<td style="text-align: center;">-62 687</td>
+<td style="text-align: left;">-134 806</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4716 Osittainen ja joustava hoitoraha</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4800-4995 Muut toimintakulut</td>
+<td style="text-align: center;">-27 216</td>
+<td style="text-align: center;">-109 146</td>
+<td style="text-align: center;">-228 096</td>
+<td style="text-align: center;">-325 762</td>
+<td style="text-align: center;">-15 175</td>
+<td style="text-align: center;">-148 349</td>
+<td style="text-align: left;">-9 832</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintakulut</td>
+<td style="text-align: center; font-weight: bold;">-1 912 994</td>
+<td style="text-align: center; font-weight: bold;">-2 584 354</td>
+<td style="text-align: center; font-weight: bold;">-5 762 145</td>
+<td style="text-align: center; font-weight: bold;">-9 424 138</td>
+<td style="text-align: center; font-weight: bold;">-1 685 217</td>
+<td style="text-align: center; font-weight: bold;">-7 159 793</td>
+<td style="text-align: left; font-weight: bold;">-1 694 942</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">7000-7299 Poistot ja arvonalentumiset</td>
+<td style="text-align: center;">-3 773 904</td>
+<td style="text-align: center;">-5 126 203</td>
+<td style="text-align: center;">-6 391 834</td>
+<td style="text-align: center;">-4 707 160</td>
+<td style="text-align: center;">-3 445 701</td>
+<td style="text-align: center;">-4 666 602</td>
+<td style="text-align: left;">-2 642 300</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Lähde:</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;">
+<sup></sup> Valtiokonttori - KKTPP - Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Kadut ja yleiset alueet</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">tili</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Kangasala - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Lempäälä - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nokia - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Ylöjärvi - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Pirkkala - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nurmijärvi - per/asukas</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Vihti - per/asukas</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3000-3199 Myyntituotot</td>
+<td style="text-align: center;">0.86</td>
+<td style="text-align: center;">28.05</td>
+<td style="text-align: center;">5.00</td>
+<td style="text-align: center;">53.30</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">5.41</td>
+<td style="text-align: left;">0.38</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3200-3299 Maksutuotot</td>
+<td style="text-align: center;">2.48</td>
+<td style="text-align: center;">13.41</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">6.12</td>
+<td style="text-align: center;">0.31</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3300-3399 Tuet ja avustukset</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.67</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3400-3559 Muut toimintatuotot</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">6.89</td>
+<td style="text-align: center;">1.80</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.89</td>
+<td style="text-align: left;">0.36</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3600-3699 Valmistevarastojen muutos + (-)</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3700-3799 Valmistus omaan käyttöön</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">71.14</td>
+<td style="text-align: center;">149.20</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">41.86</td>
+<td style="text-align: left;">1.53</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintatuotot</td>
+<td style="text-align: center; font-weight: bold;">3.54</td>
+<td style="text-align: center; font-weight: bold;">48.35</td>
+<td style="text-align: center; font-weight: bold;">7.38</td>
+<td style="text-align: center; font-weight: bold;">53.30</td>
+<td style="text-align: center; font-weight: bold;">6.69</td>
+<td style="text-align: center; font-weight: bold;">7.27</td>
+<td style="text-align: left; font-weight: bold;">0.74</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4000-4299 Henkilöstökulut</td>
+<td style="text-align: center;">-6.58</td>
+<td style="text-align: center;">-13.63</td>
+<td style="text-align: center;">-50.02</td>
+<td style="text-align: center;">-32.12</td>
+<td style="text-align: center;">-14.92</td>
+<td style="text-align: center;">-45.21</td>
+<td style="text-align: left;">-11.06</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4300-4499 Palvelujen ostot</td>
+<td style="text-align: center;">-41.22</td>
+<td style="text-align: center;">-68.86</td>
+<td style="text-align: center;">-68.42</td>
+<td style="text-align: center;">-171.86</td>
+<td style="text-align: center;">-48.33</td>
+<td style="text-align: center;">-92.54</td>
+<td style="text-align: left;">-22.66</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4300-4339 Asiakaspalvelujen ostot</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4340-4499 Muiden palvelujen ostot</td>
+<td style="text-align: center;">-41.22</td>
+<td style="text-align: center;">-68.86</td>
+<td style="text-align: center;">-68.42</td>
+<td style="text-align: center;">-171.86</td>
+<td style="text-align: center;">-48.33</td>
+<td style="text-align: center;">-92.54</td>
+<td style="text-align: left;">-22.66</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4500-4699 Aineet, tarvikkeet ja tavarat</td>
+<td style="text-align: center;">-6.55</td>
+<td style="text-align: center;">-16.88</td>
+<td style="text-align: center;">-35.85</td>
+<td style="text-align: center;">-59.02</td>
+<td style="text-align: center;">-11.80</td>
+<td style="text-align: center;">-18.55</td>
+<td style="text-align: left;">-19.90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4670 Varastojen lisäys/vähennys</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4700-4799 Avustukset</td>
+<td style="text-align: center;">-2.88</td>
+<td style="text-align: center;">-1.32</td>
+<td style="text-align: center;">-2.29</td>
+<td style="text-align: center;">-7.72</td>
+<td style="text-align: center;">-6.80</td>
+<td style="text-align: center;">-1.41</td>
+<td style="text-align: left;">-4.66</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4716 Osittainen ja joustava hoitoraha</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: left;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4800-4995 Muut toimintakulut</td>
+<td style="text-align: center;">-0.83</td>
+<td style="text-align: center;">-4.44</td>
+<td style="text-align: center;">-6.45</td>
+<td style="text-align: center;">-9.69</td>
+<td style="text-align: center;">-0.74</td>
+<td style="text-align: center;">-3.34</td>
+<td style="text-align: left;">-0.34</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintakulut</td>
+<td style="text-align: center; font-weight: bold;">-58.04</td>
+<td style="text-align: center; font-weight: bold;">-105.14</td>
+<td style="text-align: center; font-weight: bold;">-163.02</td>
+<td style="text-align: center; font-weight: bold;">-280.42</td>
+<td style="text-align: center; font-weight: bold;">-82.59</td>
+<td style="text-align: center; font-weight: bold;">-161.05</td>
+<td style="text-align: left; font-weight: bold;">-58.62</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">7000-7299 Poistot ja arvonalentumiset</td>
+<td style="text-align: center;">-114.50</td>
+<td style="text-align: center;">-208.55</td>
+<td style="text-align: center;">-180.84</td>
+<td style="text-align: center;">-140.06</td>
+<td style="text-align: center;">-168.87</td>
+<td style="text-align: center;">-104.97</td>
+<td style="text-align: left;">-91.39</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Lähde:</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;">
+<sup></sup> Valtiokonttori - KKTPP - Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<div class="cell" data-hash="kadut_cache/html/KKTPP - palveluluokkakohtainen raportti, Kadut ja yleiset alueet_0f86290bc98e15187c85d7e678716674">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-56d3b64919eb5844b32c" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-56d3b64919eb5844b32c">{"x":{"visdat":{"4f9ce844bdf":["function () ","plotlyVisDat"]},"cur_data":"4f9ce844bdf","attrs":{"4f9ce844bdf":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9ce844bdf.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9ce844bdf.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9ce844bdf.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9ce844bdf.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9ce844bdf.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9ce844bdf.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Kadut ja yleiset alueet - menot €","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_50","height":800,"width":1400,"scale":2}},"data":[{"x":[-216715.82000000001,-0,-1358424.96,-215865.22,-94772.449999999997,-27215.790000000001,-1912994.24],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-335063.40999999997,-0,-1692645.3,-415024.08000000002,-32475.189999999999,-109145.60000000001,-2584353.5800000001],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-1767865.4299999999,-0,-2418319.0600000001,-1267095.6399999999,-80769.419999999998,-228095.64999999999,-5762145.2000000002],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-1079375.01,-0,-5775858.2300000004,-1983611.29,-259531.13,-325761.94,-9424137.5999999996],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-304444.09999999998,-0,-986127.96999999997,-240769.72,-138700.98999999999,-15174.700000000001,-1685217.48],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-2009863.95,-0,-4114354.8500000001,-824538.04000000004,-62687.25,-148349.17000000001,-7159793.2599999998],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-319869.06,-0,-655162.64000000001,-575271.69999999995,-134806.35000000001,-9831.8500000000004,-1694941.6000000001],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1ec226dfb3ed2f74ce6b" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1ec226dfb3ed2f74ce6b">{"x":{"visdat":{"4f9c703c29":["function () ","plotlyVisDat"]},"cur_data":"4f9c703c29","attrs":{"4f9c703c29":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9c703c29.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c703c29.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c703c29.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c703c29.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c703c29.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c703c29.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Kadut ja yleiset alueet - tulot €","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_50","height":800,"width":1400,"scale":2}},"data":[{"x":[28279,81615,0,6748.0299999999997,0,0,0,116642.03],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[689482.63,329576.94,0,169332.34,0,0,0,1188391.9099999999],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[176829.14999999999,0,20291.91,63615,0,0,2514502.5899999999,260736.06],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1791125.73,0,0,166.25999999999999,0,0,5014303.2800000003,1791291.99],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[11442.959999999999,124980,66.079999999999998,0,0,0,0,136489.04000000001],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[240315.89000000001,13874.25,29577.790000000001,39384.260000000002,0,0,1860939,323152.19],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[11124.23,0,0,10331.129999999999,0,0,44342.230000000003,21455.360000000001],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-94aa6b310a9a37122c9e" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-94aa6b310a9a37122c9e">{"x":{"visdat":{"4f9c2ee2223":["function () ","plotlyVisDat"]},"cur_data":"4f9c2ee2223","attrs":{"4f9c2ee2223":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9c2ee2223.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c2ee2223.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c2ee2223.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c2ee2223.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c2ee2223.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c2ee2223.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Kadut ja yleiset alueet - menot € per asukas","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_50","height":800,"width":1400,"scale":2}},"data":[{"x":[-6.5800000000000001,-0,-41.219999999999999,-6.5499999999999998,-2.8799999999999999,-0.82999999999999996,-58.039999999999999],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-13.630000000000001,-0,-68.859999999999999,-16.879999999999999,-1.3200000000000001,-4.4400000000000004,-105.14],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-50.020000000000003,-0,-68.420000000000002,-35.850000000000001,-2.29,-6.4500000000000002,-163.02000000000001],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-32.119999999999997,-0,-171.86000000000001,-59.020000000000003,-7.7199999999999998,-9.6899999999999995,-280.42000000000002],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-14.92,-0,-48.329999999999998,-11.800000000000001,-6.7999999999999998,-0.73999999999999999,-82.590000000000003],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-45.210000000000001,-0,-92.540000000000006,-18.550000000000001,-1.4099999999999999,-3.3399999999999999,-161.05000000000001],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-11.06,-0,-22.66,-19.899999999999999,-4.6600000000000001,-0.34000000000000002,-58.619999999999997],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-c0c772a5ffa39ac4a7c6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-c0c772a5ffa39ac4a7c6">{"x":{"visdat":{"4f9c296b7ad2":["function () ","plotlyVisDat"]},"cur_data":"4f9c296b7ad2","attrs":{"4f9c296b7ad2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9c296b7ad2.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c296b7ad2.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c296b7ad2.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c296b7ad2.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c296b7ad2.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c296b7ad2.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Kadut ja yleiset alueet - tulot € per asukas","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_50","height":800,"width":1400,"scale":2}},"data":[{"x":[0.85999999999999999,2.48,0,0.20000000000000001,0,0,0,3.54],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[28.050000000000001,13.41,0,6.8899999999999997,0,0,0,48.350000000000001],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5,0,0.56999999999999995,1.8,0,0,71.140000000000001,7.3799999999999999],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[53.299999999999997,0,0,0,0,0,149.19999999999999,53.299999999999997],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0.56000000000000005,6.1200000000000001,0,0,0,0,0,6.6900000000000004],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.4100000000000001,0.31,0.67000000000000004,0.89000000000000001,0,0,41.859999999999999,7.2699999999999996],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0.38,0,0,0.35999999999999999,0,0,1.53,0.73999999999999999],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="pysäköinnin-järjestäminen-ja-valvonta" class="level2" data-number="19.2"><h2 data-number="19.2" class="anchored" data-anchor-id="pysäköinnin-järjestäminen-ja-valvonta">
+<span class="header-section-number">19.2</span> Pysäköinnin järjestäminen ja valvonta</h2>
+<div class="cell" data-hash="kadut_cache/html/KKTPP - palveluluokkakohtainen raportti, Pysäköinnin järjestäminen ja valvonta tbl_91dfd4571d2b75417e195ab1d4a31c01">
+<div class="cell-output-display">
+<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Pysäköinnin järjestäminen ja valvonta</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">tili</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Kangasala - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Lempäälä - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nokia - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Ylöjärvi - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Pirkkala - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nurmijärvi - €</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Vihti - €</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3000-3199 Myyntituotot</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">22 151</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">7 263</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3200-3299 Maksutuotot</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4 123</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3300-3399 Tuet ja avustukset</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3 071</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3400-3559 Muut toimintatuotot</td>
+<td style="text-align: center;">131 733</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">84 043</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3600-3699 Valmistevarastojen muutos + (-)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3700-3799 Valmistus omaan käyttöön</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintatuotot</td>
+<td style="text-align: center; font-weight: bold;">131 733</td>
+<td style="text-align: center; font-weight: bold;">4 123</td>
+<td style="text-align: center; font-weight: bold;">109 265</td>
+<td style="text-align: center; font-weight: bold;">0</td>
+<td style="text-align: center; font-weight: bold;">7 263</td>
+<td style="text-align: center; font-weight: bold;">0</td>
+<td style="text-align: left; font-weight: bold;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4000-4299 Henkilöstökulut</td>
+<td style="text-align: center;">-64 832</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-90 847</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-103</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4300-4499 Palvelujen ostot</td>
+<td style="text-align: center;">-469 364</td>
+<td style="text-align: center;">-5 060</td>
+<td style="text-align: center;">-27 199</td>
+<td style="text-align: center;">-22 151</td>
+<td style="text-align: center;">-5 687</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4300-4339 Asiakaspalvelujen ostot</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4340-4499 Muiden palvelujen ostot</td>
+<td style="text-align: center;">-469 364</td>
+<td style="text-align: center;">-5 060</td>
+<td style="text-align: center;">-27 199</td>
+<td style="text-align: center;">-22 151</td>
+<td style="text-align: center;">-5 687</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4500-4699 Aineet, tarvikkeet ja tavarat</td>
+<td style="text-align: center;">-2 366</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-1 182</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-3</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4670 Varastojen lisäys/vähennys</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4700-4799 Avustukset</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4716 Osittainen ja joustava hoitoraha</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4800-4995 Muut toimintakulut</td>
+<td style="text-align: center;">-9 962</td>
+<td style="text-align: center;">-175</td>
+<td style="text-align: center;">-2 804</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintakulut</td>
+<td style="text-align: center; font-weight: bold;">-546 524</td>
+<td style="text-align: center; font-weight: bold;">-5 235</td>
+<td style="text-align: center; font-weight: bold;">-122 032</td>
+<td style="text-align: center; font-weight: bold;">-22 151</td>
+<td style="text-align: center; font-weight: bold;">-5 795</td>
+<td style="text-align: center; font-weight: bold;">0</td>
+<td style="text-align: left; font-weight: bold;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">7000-7299 Poistot ja arvonalentumiset</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Lähde:</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;">
+<sup></sup> Valtiokonttori - KKTPP - Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Pysäköinnin järjestäminen ja valvonta</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">tili</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Kangasala - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Lempäälä - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nokia - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Ylöjärvi - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Pirkkala - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nurmijärvi - per/asukas</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Vihti - per/asukas</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3000-3199 Myyntituotot</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.63</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.36</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3200-3299 Maksutuotot</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3300-3399 Tuet ja avustukset</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3400-3559 Muut toimintatuotot</td>
+<td style="text-align: center;">4.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">2.38</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3600-3699 Valmistevarastojen muutos + (-)</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3700-3799 Valmistus omaan käyttöön</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintatuotot</td>
+<td style="text-align: center; font-weight: bold;">4.00</td>
+<td style="text-align: center; font-weight: bold;">0.17</td>
+<td style="text-align: center; font-weight: bold;">3.09</td>
+<td style="text-align: center; font-weight: bold;">0.00</td>
+<td style="text-align: center; font-weight: bold;">0.36</td>
+<td style="text-align: center; font-weight: bold;">0</td>
+<td style="text-align: left; font-weight: bold;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4000-4299 Henkilöstökulut</td>
+<td style="text-align: center;">-1.97</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">-2.57</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">-0.01</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4300-4499 Palvelujen ostot</td>
+<td style="text-align: center;">-14.24</td>
+<td style="text-align: center;">-0.21</td>
+<td style="text-align: center;">-0.77</td>
+<td style="text-align: center;">-0.66</td>
+<td style="text-align: center;">-0.28</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4300-4339 Asiakaspalvelujen ostot</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4340-4499 Muiden palvelujen ostot</td>
+<td style="text-align: center;">-14.24</td>
+<td style="text-align: center;">-0.21</td>
+<td style="text-align: center;">-0.77</td>
+<td style="text-align: center;">-0.66</td>
+<td style="text-align: center;">-0.28</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4500-4699 Aineet, tarvikkeet ja tavarat</td>
+<td style="text-align: center;">-0.07</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">-0.03</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4670 Varastojen lisäys/vähennys</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4700-4799 Avustukset</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 4em;" data-indentlevel="1">4716 Osittainen ja joustava hoitoraha</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">4800-4995 Muut toimintakulut</td>
+<td style="text-align: center;">-0.30</td>
+<td style="text-align: center;">-0.01</td>
+<td style="text-align: center;">-0.08</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Toimintakulut</td>
+<td style="text-align: center; font-weight: bold;">-16.58</td>
+<td style="text-align: center; font-weight: bold;">-0.21</td>
+<td style="text-align: center; font-weight: bold;">-3.45</td>
+<td style="text-align: center; font-weight: bold;">-0.66</td>
+<td style="text-align: center; font-weight: bold;">-0.28</td>
+<td style="text-align: center; font-weight: bold;">0</td>
+<td style="text-align: left; font-weight: bold;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">7000-7299 Poistot ja arvonalentumiset</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Lähde:</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;">
+<sup></sup> Valtiokonttori - KKTPP - Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<div class="cell" data-hash="kadut_cache/html/KKTPP - palveluluokkakohtainen raportti, Pysäköinnin järjestäminen ja valvonta_3cc4f8211f4bd9a0b548247f72b96be1">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5a7f3c259f436157f1c6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5a7f3c259f436157f1c6">{"x":{"visdat":{"4f9c36197cf8":["function () ","plotlyVisDat"]},"cur_data":"4f9c36197cf8","attrs":{"4f9c36197cf8":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9c36197cf8.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c36197cf8.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c36197cf8.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c36197cf8.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c36197cf8.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c36197cf8.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Pysäköinnin järjestäminen ja valvonta - menot €","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_51","height":800,"width":1400,"scale":2}},"data":[{"x":[-64832.18,-0,-469363.91999999998,-2365.5799999999999,-0,-9962.3099999999995,-546523.98999999999],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-5060,-0,-0,-175,-5235],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-90846.539999999994,-0,-27199.43,-1182.01,-0,-2803.9299999999998,-122031.91],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-22151,-0,-0,-0,-22151],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-103.31,-0,-5687.0900000000001,-3.1499999999999999,-0,-1.54,-5795.0900000000001],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-0,-0,-0,-0,-0],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-0,-0,-0,-0,-0],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-02b927527efda8db7550" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-02b927527efda8db7550">{"x":{"visdat":{"4f9c18df684c":["function () ","plotlyVisDat"]},"cur_data":"4f9c18df684c","attrs":{"4f9c18df684c":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9c18df684c.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c18df684c.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c18df684c.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c18df684c.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c18df684c.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c18df684c.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Pysäköinnin järjestäminen ja valvonta - tulot €","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_51","height":800,"width":1400,"scale":2}},"data":[{"x":[0,0,0,131732.79000000001,0,0,0,131732.79000000001],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,4123.4499999999998,0,0,0,0,0,4123.4499999999998],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[22151,0,3070.6900000000001,84042.970000000001,0,0,0,109264.66],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0,0,0,0,0,0,0],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[7262.5100000000002,0,0.26000000000000001,0,0,0,0,7262.7700000000004],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0,0,0,0,0,0,0],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0,0,0,0,0,0,0],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5a4673afe95495c83fcb" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5a4673afe95495c83fcb">{"x":{"visdat":{"4f9c264e51d6":["function () ","plotlyVisDat"]},"cur_data":"4f9c264e51d6","attrs":{"4f9c264e51d6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9c264e51d6.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c264e51d6.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c264e51d6.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c264e51d6.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c264e51d6.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c264e51d6.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Pysäköinnin järjestäminen ja valvonta - menot € per asukas","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_51","height":800,"width":1400,"scale":2}},"data":[{"x":[-1.97,-0,-14.24,-0.070000000000000007,-0,-0.29999999999999999,-16.579999999999998],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-0.20999999999999999,-0,-0,-0.01,-0.20999999999999999],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-2.5699999999999998,-0,-0.77000000000000002,-0.029999999999999999,-0,-0.080000000000000002,-3.4500000000000002],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-0.66000000000000003,-0,-0,-0,-0.66000000000000003],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0.01,-0,-0.28000000000000003,-0,-0,-0,-0.28000000000000003],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-0,-0,-0,-0,-0],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0,-0,-0,-0,-0,-0,-0],"y":["4000-4299 Henkilöstökulut","4300-4339 Asiakaspalvelujen ostot","4340-4499 Muiden palvelujen ostot","4500-4699 Aineet, tarvikkeet ja tavarat","4700-4799 Avustukset","4800-4995 Muut toimintakulut","Toimintakulut"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a0ea4204098d229e71ac" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a0ea4204098d229e71ac">{"x":{"visdat":{"4f9c4a0a4c80":["function () ","plotlyVisDat"]},"cur_data":"4f9c4a0a4c80","attrs":{"4f9c4a0a4c80":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"4f9c4a0a4c80.1":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c4a0a4c80.2":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c4a0a4c80.3":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c4a0a4c80.4":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c4a0a4c80.5":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"4f9c4a0a4c80.6":{"x":{},"y":{},"orientation":"h","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":100,"r":50,"pad":5},"autosize":"F","title":{"text":"Pysäköinnin järjestäminen ja valvonta - tulot € per asukas","font":{"size":20,"color":"rgba(0,0,0)"}},"legend":{"orientation":"h","x":0,"y":-0.29999999999999999,"font":{"size":12,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","showlegend":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"<b>Vertailukaupungit<\/b>","font":{"size":12,"color":"rgba(0,0,0)"}},"yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","font":{"size":12,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat_51","height":800,"width":1400,"scale":2}},"data":[{"x":[0,0,0,4,0,0,0,4],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.17000000000000001,0,0,0,0,0,0.17000000000000001],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"bar","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0.63,0,0.089999999999999997,2.3799999999999999,0,0,0,3.0899999999999999],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"bar","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0,0,0,0,0,0,0],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"bar","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0.35999999999999999,0,0,0,0,0,0,0.35999999999999999],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"bar","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0,0,0,0,0,0,0],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"bar","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0,0,0,0,0,0,0],"y":["3000-3199 Myyntituotot","3200-3299 Maksutuotot","3300-3399 Tuet ja avustukset","3400-3559 Muut toimintatuotot","3600-3699 Valmistevarastojen muutos + (-)","3610 Valmiiden ja keskeneräisten tuotteiden varastojen lisäys (vähennys)","3700-3799 Valmistus omaan käyttöön","Toimintatuotot"],"orientation":"h","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"bar","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Kopioitu!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Kopioitu!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./ymparistonsuojelu.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Ympäristönsuojelu</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./puistot.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Puistot ja viheralueet</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+<li class="nav-item">
+ Kangasalan kaupunki 2022
+  </li>  
+</ul>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+</body></html>

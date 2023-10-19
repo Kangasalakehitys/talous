@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fi" xml:lang="fi"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Juuso Heinisuo">
+<meta name="keywords" content="Talouden vertailua, Kangasalan kaupunki">
+<meta name="description" content="Tämä on talouden kuntavertailupaketti.. Tilastokirja on julkaistu LGPL-2.1-or-later lisenssi alla. Copyright 2023 Kangasalan kaupunki">
+<title>Kangasalan kaupunki - Talouden vertailu 2022</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./yleishallinto.html" rel="next">
+<link href="./talous.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Ei tuloksia",
+    "search-matching-documents-text": "tulokset",
+    "search-copy-link-title": "Kopioi linkki hakuun",
+    "search-hide-matches-text": "Piilota loput tulokset",
+    "search-more-match-text": "tulos tässä dokumentissa",
+    "search-more-matches-text": "tulosta tässä dokumentissa",
+    "search-clear-button-title": "Tyhjennä",
+    "search-detached-cancel-button-title": "Peruuta",
+    "search-submit-button-title": "Lähetä",
+    "search-label": "Hae"
+  }
+}</script><script src="site_libs/htmlwidgets-1.6.0/htmlwidgets.js"></script><script src="site_libs/plotly-binding-4.10.1/plotly.js"></script><script src="site_libs/typedarray-0.1/typedarray.min.js"></script><script src="site_libs/jquery-3.5.1/jquery.min.js"></script><link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script><link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script><script src="site_libs/kePrint-0.0.1/kePrint.js"></script><link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Vaihda sivupalkki" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./palveluluokat.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Vaihda sivupalkki" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./themes/images/kangasala/kangasala_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Talouden vertailu 2022</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/Kangasalakehitys/tilastokirjateams" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=%7Curl%7C">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=%7Curl%7C">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=%7Curl%7C">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+</div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Hae"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alkusanat</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./talous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Kuntien neljännesvuosiraportointi - vertailuajankohta (vuoden 2022 tiedot)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./palveluluokat.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./yleishallinto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Yleishallinto ja vaalit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./alueiden_kehitys.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Alueiden kehittäminen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./elinkeinot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Elinkeinot, työllisyys ja tukipalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./joukkoliikenne.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joukkoliikenne ja muut liikkumisen palvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./varhaiskasvatus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Varhaiskasvatus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./perusopetus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Perusopetus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kansalaisopistokoulutus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kansalaisopistokoulutus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lukio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Lukio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./muu_opetus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Muu opetus- ja kasvatustoiminta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nuorisopalvelut.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Nuorisopalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kulttuuri_ja_musiikki.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Kulttuuri- ja musiikkipalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kirjasto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Kirjastopalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kaavoitus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Kaavoitus</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liikunta_ja_ulkoilu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Liikunta- ja ulkoilupalvelut</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./asuminen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Asumisen palvelut yhteensä</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ymparistonsuojelu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Ympäristönsuojelu</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kadut.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Kadut ja yleiset alueet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./puistot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Puistot ja viheralueet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rakennuttaminen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Kunnallinen rakennuttaminen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./maaomaisuus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Maaomaisuuden hallinta</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vesihuolto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Vesihuolto</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./maa_ja_metsatalous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Maa- ja metsätaloustuotteet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Liitteet</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Vaihda osio">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lahteet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lähteet</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sisällysluettelo</h2>
+   
+  <ul>
+<li>
+<a href="#yhteenveto-kuntavertailusta-toimintamenojen-suhteen" id="toc-yhteenveto-kuntavertailusta-toimintamenojen-suhteen" class="nav-link active" data-scroll-target="#yhteenveto-kuntavertailusta-toimintamenojen-suhteen"><span class="header-section-number">3</span> Yhteenveto kuntavertailusta toimintamenojen suhteen</a>
+  <ul class="collapse">
+<li><a href="#toimintamenot--" id="toc-toimintamenot--" class="nav-link" data-scroll-target="#toimintamenot--"><span class="header-section-number">3.1</span> Toimintamenot - €</a></li>
+  <li><a href="#toimintamenot---per-asukas" id="toc-toimintamenot---per-asukas" class="nav-link" data-scroll-target="#toimintamenot---per-asukas"><span class="header-section-number">3.2</span> Toimintamenot - € per asukas</a></li>
+  </ul>
+</li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Kangasalakehitys/tilastokirjateams/edit/main/palveluluokat.qmd" class="toc-action">Muokkaa sivua</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</span>
+</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>Kunnat ovat raportoineet Valtiokonttorille tilinpäätöstietonsa käyttötaloudesta ja investoinneista palveluluokkakohtaisesti vuodesta 2021 lähtien. Näistä tiedoista on koottu erillisiä palveluluokkakohtaisia näkymiä.</p>
+<p><span class="citation" data-cites="valtiokonttori_palveluluokat">(Lähde: <a href="lahteet.html#ref-valtiokonttori_palveluluokat" role="doc-biblioref">Valtiokonttori 2023</a>)</span></p>
+<section id="yhteenveto-kuntavertailusta-toimintamenojen-suhteen" class="level1" data-number="3"><h1 data-number="3">
+<span class="header-section-number">3</span> Yhteenveto kuntavertailusta toimintamenojen suhteen</h1>
+<p>Seuraavassa on vertailtu eri palveluluokkia ja kuntia keskenään. Ensin tarkistelussa ovat euromäärät ja toisessa vaiheessa palveluluokkien kustannukset suhteutettuna asukasmäärään.</p>
+<section id="toimintamenot--" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="toimintamenot--">
+<span class="header-section-number">3.1</span> Toimintamenot - €</h2>
+<div class="cell" data-hash="palveluluokat_cache/html/KKTPP - palveluluokkakohtainen raportti, yhteenveto_6b2e13bf1b306c6a5004f98d39991760">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-096fe6ca0f63dbc1bd6c" style="width:100%;height:1000px;"></div>
+<script type="application/json" data-for="htmlwidget-096fe6ca0f63dbc1bd6c">{"x":{"visdat":{"13085c6de8c":["function () ","plotlyVisDat"]},"cur_data":"13085c6de8c","attrs":{"13085c6de8c":{"x":[2686130.25,96006.100000000006,15957391.439999999,130726.92999999999,2072913.53,2767265.96,25045138.969999999,710592.93999999994,2543141,0,83833.399999999994,171268.04000000001,0,1407943.9399999999,2436192.4700000002,836362.96999999997,288624.85999999999,18225,8520.9699999999993,8819.5100000000002,1192147.3799999999,1570951.0600000001,0,887716.01000000001,0,621530.30000000005,94808.699999999997,0,334335.47999999998,1912994.24,546523.98999999999,991736.19999999995,250370.17000000001,10384601.130000001,0,0,14932428.380000001,1077008.9399999999,617026.87,1777531.9299999999,1777531.9299999999,86752.429999999993,24611.619999999999,1603905.54,3307850.7400000002,0,63755.339999999997,0,0,2051819.3,56466.870000000003,31444],"y":{},"mode":"markers","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"13085c6de8c.1":{"x":[2981312.4900000002,64784.5,12447849.300000001,525792.39000000001,2240400.6899999999,1374658.71,22591519.800000001,1360965.3400000001,2342033.6899999999,199655.42999999999,0,16995,281750.06,1176212.0900000001,-301727.27000000002,929718.25,39481.089999999997,0,1183.0599999999999,12830.93,257724.41,503798.51000000001,167932.85000000001,312472.65999999997,104157.53999999999,411539.04999999999,0,25007.23,233269.48000000001,2584353.5800000001,5235,450903.83000000002,0,13586273.029999999,0,126288.09,11293881.48,769698.91000000003,168486.69,1227866.79,1227866.79,360509.40000000002,0,0,0,0,0,56419.959999999999,23412.119999999999,1454394.6299999999,60499.589999999997,255542.29000000001],"y":{},"mode":"markers","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"13085c6de8c.2":{"x":[2530156.6099999999,84420.25,14399313,925988.60999999999,3635588.4700000002,2059004.52,28288658.239999998,524937.02000000002,2422415.8399999999,3475995.79,134773.26999999999,0,168979.10000000001,993254.43999999994,1610249.3400000001,598242.75,109787.41,38784.110000000001,69664.490000000005,113790.64,464895.46000000002,611611.16000000003,273699.53999999998,551158.14000000001,186929.16,549775.65000000002,22769.830000000002,131588.62,150166.10000000001,5762145.2000000002,122031.91,702804.18999999994,0,13243310.91,58192.330000000002,512735.87,16763395.199999999,1024597.5600000001,808749.23999999999,1730491.8500000001,1730491.8500000001,36472.050000000003,0,0,0,183061.60000000001,0,0,0,1610124.3200000001,0,0],"y":{},"mode":"markers","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"13085c6de8c.3":{"x":[2482640.8900000001,71825.779999999999,18681041.460000001,497632.84000000003,2141117.1099999999,1546005.8899999999,30852931.559999999,981127.18999999994,3169649.3100000001,0,0,313610.09999999998,0,1340542.21,1868845.6899999999,867575.94999999995,51988.059999999998,73521.100000000006,26510.560000000001,80094.960000000006,213630.44,346133.66999999998,346133.66999999998,54783.290000000001,54783.290000000001,595327.19999999995,37798.610000000001,41817.489999999998,167270.03,9424137.5999999996,22151,615228.81999999995,0,12871338.01,44639.059999999998,335562.52000000002,15392083.41,811069.39000000001,1907980.1599999999,1374203.4299999999,1374203.4299999999,88461.550000000003,40075.089999999997,0,0,495026.67999999999,0,0,0,1797278.1200000001,95744.169999999998,340187.38],"y":{},"mode":"markers","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"13085c6de8c.4":{"x":[2420577.0600000001,79333.949999999997,10812752.73,304754.29999999999,1310893.77,1340283.4199999999,18402022.02,1276652.5700000001,1465195.78,209215.79999999999,0,11500,0,952639.77000000002,1279288.5700000001,520423.90000000002,25510.099999999999,0,0,0,301389.84000000003,254950.48999999999,341653.96999999997,84983.5,42491.779999999999,426249.39000000001,30189.380000000001,112924.28999999999,113379.28,1685217.48,5795.0900000000001,658674.92000000004,0,10160247.67,70461.580000000002,77514.929999999993,10107667.560000001,50593.5,209686.10000000001,1005847.15,1005847.15,34559.730000000003,608670.81999999995,51468.18,43136.790000000001,27301.450000000001,0,0,0,1705750.9099999999,27347.98,153980.72],"y":{},"mode":"markers","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"13085c6de8c.5":{"x":[2566232.77,0,24083323.510000002,525829.72999999998,2999711.1600000001,2862699.8799999999,40008833.32,384870.89000000001,2323394.52,0,0,243178.07999999999,198630,1978690.0900000001,2889657.6899999999,1256028.8100000001,294667.98999999999,0,0,0,602084.02000000002,547686.58999999997,331217.32000000001,826372.43999999994,344321.89000000001,267585.34999999998,0,1193.47,611134.81000000006,7159793.2599999998,0,432360.34999999998,0,13362317.699999999,418503.17999999999,413872.26000000001,15003067.689999999,498114.78999999998,561693.03000000003,2641991.1499999999,2641991.1499999999,88984.639999999999,825035.25,1627396.8,2131468,0,29552.119999999999,0,114695.27,3204429.3100000001,46356.889999999999,0],"y":{},"mode":"markers","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"13085c6de8c.6":{"x":[2418958.3700000001,54055.900000000001,13181303.15,171836.51000000001,1362088.96,1465649.05,24002432.649999999,224067.14999999999,2892172.7200000002,71905.710000000006,142.91999999999999,91397.889999999999,4974.0200000000004,1000146.46,1101744.8700000001,801376.91000000003,109112.73,33559.720000000001,0,0,386917.03000000003,344881.28999999998,90458.529999999999,502944.94,0,365124.23999999999,0,75736.580000000002,533793.48999999999,1694941.6000000001,0,268849.98999999999,0,8215064.3899999997,25481.200000000001,305608.13,10143867.220000001,508987.67999999999,693794.5,1776233.45,1776233.45,77354,0,1205052.8799999999,1296070.1399999999,0,5310.2399999999998,0,0,780052.97999999998,59922.080000000002,161680.89000000001],"y":{},"mode":"markers","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - €","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":20,"l":50,"t":100,"r":50,"pad":2},"autosize":"T","title":{"text":"Toimintakulut - €","font":{"size":14,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","tickfont":{"size":9,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["Aamu-ja iltapäivätoiminta","Alueiden kehittäminen","Asemakaavoitus","Asumisen kehittämisen koordinointi","Asuntojen vuokrauspalvelut","Elinkeinojen edistäminen","Energiahuoltopalvelut","Esiopetus","Hulevesijärjestelmän hallinta","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Kadut ja yleiset alueet","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Kansalaisopistokoulutus","Kiinteistön muodostaminen","Kirjastopalvelut","Kunnallinen rakennuttaminen","Liikunta- ja ulkoilupalvelut","Lukiokoulutus","Maa- ja metsätaloustuotteet","Maaomaisuuden hallinta","Maaseutupalvelut","Museopalvelut","Musiikkipalvelut","Muu opetus- ja kasvatustoiminta","Muu varhaiskasvatus","Nuorisopalvelut","Paikkatietopalvelut","Päiväkotitoiminta","Perhepäivähoito","Perusopetus","Puistot ja viheralueet","Pysäköinnin järjestäminen ja valvonta","Rakennusvalvonta","Taiteen perusopetus","Teatteri-, tanssi- ja sirkuspalvelut","Tilavuokrauspalvelut","Tukipalvelu","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Työllisyyspalvelut","Vaalien järjestäminen","Vesihuollon järjestäminen ja kehittäminen","Vesihuollon järjestäminen, hulevesiviemäröinti","Vesihuoltopalvelun tuottaminen, jätevesi","Vesihuoltopalvelun tuottaminen, talousvesi","Visuaalisen taiteen palvelut","Yleisen kulttuuritoiminnan palvelut","Yleishallintopalvelut","Yleiskaavoitus","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät"]},"xaxis":{"domain":[0,1],"automargin":true,"title":[]},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat","height":800,"width":1400,"scale":2}},"data":[{"x":[2686130.25,96006.100000000006,15957391.439999999,130726.92999999999,2072913.53,2767265.96,25045138.969999999,710592.93999999994,2543141,0,83833.399999999994,171268.04000000001,0,1407943.9399999999,2436192.4700000002,836362.96999999997,288624.85999999999,18225,8520.9699999999993,8819.5100000000002,1192147.3799999999,1570951.0600000001,0,887716.01000000001,0,621530.30000000005,94808.699999999997,0,334335.47999999998,1912994.24,546523.98999999999,991736.19999999995,250370.17000000001,10384601.130000001,0,0,14932428.380000001,1077008.9399999999,617026.87,1777531.9299999999,1777531.9299999999,86752.429999999993,24611.619999999999,1603905.54,3307850.7400000002,0,63755.339999999997,0,0,2051819.3,56466.870000000003,31444],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - €","type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2981312.4900000002,64784.5,12447849.300000001,525792.39000000001,2240400.6899999999,1374658.71,22591519.800000001,1360965.3400000001,2342033.6899999999,199655.42999999999,0,16995,281750.06,1176212.0900000001,-301727.27000000002,929718.25,39481.089999999997,0,1183.0599999999999,12830.93,257724.41,503798.51000000001,167932.85000000001,312472.65999999997,104157.53999999999,411539.04999999999,0,25007.23,233269.48000000001,2584353.5800000001,5235,450903.83000000002,0,13586273.029999999,0,126288.09,11293881.48,769698.91000000003,168486.69,1227866.79,1227866.79,360509.40000000002,0,0,0,0,0,56419.959999999999,23412.119999999999,1454394.6299999999,60499.589999999997,255542.29000000001],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - €","type":"scatter","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2530156.6099999999,84420.25,14399313,925988.60999999999,3635588.4700000002,2059004.52,28288658.239999998,524937.02000000002,2422415.8399999999,3475995.79,134773.26999999999,0,168979.10000000001,993254.43999999994,1610249.3400000001,598242.75,109787.41,38784.110000000001,69664.490000000005,113790.64,464895.46000000002,611611.16000000003,273699.53999999998,551158.14000000001,186929.16,549775.65000000002,22769.830000000002,131588.62,150166.10000000001,5762145.2000000002,122031.91,702804.18999999994,0,13243310.91,58192.330000000002,512735.87,16763395.199999999,1024597.5600000001,808749.23999999999,1730491.8500000001,1730491.8500000001,36472.050000000003,0,0,0,183061.60000000001,0,0,0,1610124.3200000001,0,0],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - €","type":"scatter","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2482640.8900000001,71825.779999999999,18681041.460000001,497632.84000000003,2141117.1099999999,1546005.8899999999,30852931.559999999,981127.18999999994,3169649.3100000001,0,0,313610.09999999998,0,1340542.21,1868845.6899999999,867575.94999999995,51988.059999999998,73521.100000000006,26510.560000000001,80094.960000000006,213630.44,346133.66999999998,346133.66999999998,54783.290000000001,54783.290000000001,595327.19999999995,37798.610000000001,41817.489999999998,167270.03,9424137.5999999996,22151,615228.81999999995,0,12871338.01,44639.059999999998,335562.52000000002,15392083.41,811069.39000000001,1907980.1599999999,1374203.4299999999,1374203.4299999999,88461.550000000003,40075.089999999997,0,0,495026.67999999999,0,0,0,1797278.1200000001,95744.169999999998,340187.38],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - €","type":"scatter","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"line":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2420577.0600000001,79333.949999999997,10812752.73,304754.29999999999,1310893.77,1340283.4199999999,18402022.02,1276652.5700000001,1465195.78,209215.79999999999,0,11500,0,952639.77000000002,1279288.5700000001,520423.90000000002,25510.099999999999,0,0,0,301389.84000000003,254950.48999999999,341653.96999999997,84983.5,42491.779999999999,426249.39000000001,30189.380000000001,112924.28999999999,113379.28,1685217.48,5795.0900000000001,658674.92000000004,0,10160247.67,70461.580000000002,77514.929999999993,10107667.560000001,50593.5,209686.10000000001,1005847.15,1005847.15,34559.730000000003,608670.81999999995,51468.18,43136.790000000001,27301.450000000001,0,0,0,1705750.9099999999,27347.98,153980.72],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - €","type":"scatter","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2566232.77,0,24083323.510000002,525829.72999999998,2999711.1600000001,2862699.8799999999,40008833.32,384870.89000000001,2323394.52,0,0,243178.07999999999,198630,1978690.0900000001,2889657.6899999999,1256028.8100000001,294667.98999999999,0,0,0,602084.02000000002,547686.58999999997,331217.32000000001,826372.43999999994,344321.89000000001,267585.34999999998,0,1193.47,611134.81000000006,7159793.2599999998,0,432360.34999999998,0,13362317.699999999,418503.17999999999,413872.26000000001,15003067.689999999,498114.78999999998,561693.03000000003,2641991.1499999999,2641991.1499999999,88984.639999999999,825035.25,1627396.8,2131468,0,29552.119999999999,0,114695.27,3204429.3100000001,46356.889999999999,0],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - €","type":"scatter","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"line":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2418958.3700000001,54055.900000000001,13181303.15,171836.51000000001,1362088.96,1465649.05,24002432.649999999,224067.14999999999,2892172.7200000002,71905.710000000006,142.91999999999999,91397.889999999999,4974.0200000000004,1000146.46,1101744.8700000001,801376.91000000003,109112.73,33559.720000000001,0,0,386917.03000000003,344881.28999999998,90458.529999999999,502944.94,0,365124.23999999999,0,75736.580000000002,533793.48999999999,1694941.6000000001,0,268849.98999999999,0,8215064.3899999997,25481.200000000001,305608.13,10143867.220000001,508987.67999999999,693794.5,1776233.45,1776233.45,77354,0,1205052.8799999999,1296070.1399999999,0,5310.2399999999998,0,0,780052.97999999998,59922.080000000002,161680.89000000001],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - €","type":"scatter","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"line":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" data-hash="palveluluokat_cache/html/KKTPP - palveluluokkakohtainen raportti, yhteenveto tbl_36b9a2a209f04a32be763a6f1f3376b3">
+<div class="cell-output-display">
+<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Toimintakulut - €</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">palveluluokka</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Kangasala - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Lempäälä - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nokia - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Ylöjärvi - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Pirkkala - €</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nurmijärvi - €</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Vihti - €</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Perusopetus</td>
+<td style="text-align: center;">25 045 139</td>
+<td style="text-align: center;">22 591 520</td>
+<td style="text-align: center;">28 288 658</td>
+<td style="text-align: center;">30 852 932</td>
+<td style="text-align: center;">18 402 022</td>
+<td style="text-align: center;">40 008 833</td>
+<td style="text-align: left;">24 002 433</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Päiväkotitoiminta</td>
+<td style="text-align: center;">15 957 391</td>
+<td style="text-align: center;">12 447 849</td>
+<td style="text-align: center;">14 399 313</td>
+<td style="text-align: center;">18 681 041</td>
+<td style="text-align: center;">10 812 753</td>
+<td style="text-align: center;">24 083 324</td>
+<td style="text-align: left;">13 181 303</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tukipalvelu</td>
+<td style="text-align: center;">14 932 428</td>
+<td style="text-align: center;">11 293 881</td>
+<td style="text-align: center;">16 763 395</td>
+<td style="text-align: center;">15 392 083</td>
+<td style="text-align: center;">10 107 668</td>
+<td style="text-align: center;">15 003 068</td>
+<td style="text-align: left;">10 143 867</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tilavuokrauspalvelut</td>
+<td style="text-align: center;">10 384 601</td>
+<td style="text-align: center;">13 586 273</td>
+<td style="text-align: center;">13 243 311</td>
+<td style="text-align: center;">12 871 338</td>
+<td style="text-align: center;">10 160 248</td>
+<td style="text-align: center;">13 362 318</td>
+<td style="text-align: left;">8 215 064</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vesihuoltopalvelun tuottaminen, jätevesi</td>
+<td style="text-align: center;">3 307 851</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">43 137</td>
+<td style="text-align: center;">2 131 468</td>
+<td style="text-align: left;">1 296 070</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Esiopetus</td>
+<td style="text-align: center;">2 767 266</td>
+<td style="text-align: center;">1 374 659</td>
+<td style="text-align: center;">2 059 005</td>
+<td style="text-align: center;">1 546 006</td>
+<td style="text-align: center;">1 340 283</td>
+<td style="text-align: center;">2 862 700</td>
+<td style="text-align: left;">1 465 649</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Yleishallintopalvelut</td>
+<td style="text-align: center;">2 686 130</td>
+<td style="text-align: center;">2 981 312</td>
+<td style="text-align: center;">2 530 157</td>
+<td style="text-align: center;">2 482 641</td>
+<td style="text-align: center;">2 420 577</td>
+<td style="text-align: center;">2 566 233</td>
+<td style="text-align: left;">2 418 958</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lukiokoulutus</td>
+<td style="text-align: center;">2 543 141</td>
+<td style="text-align: center;">2 342 034</td>
+<td style="text-align: center;">2 422 416</td>
+<td style="text-align: center;">3 169 649</td>
+<td style="text-align: center;">1 465 196</td>
+<td style="text-align: center;">2 323 395</td>
+<td style="text-align: left;">2 892 173</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Liikunta- ja ulkoilupalvelut</td>
+<td style="text-align: center;">2 436 192</td>
+<td style="text-align: center;">-301 727</td>
+<td style="text-align: center;">1 610 249</td>
+<td style="text-align: center;">1 868 846</td>
+<td style="text-align: center;">1 279 289</td>
+<td style="text-align: center;">2 889 658</td>
+<td style="text-align: left;">1 101 745</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muu varhaiskasvatus</td>
+<td style="text-align: center;">2 072 914</td>
+<td style="text-align: center;">2 240 401</td>
+<td style="text-align: center;">3 635 588</td>
+<td style="text-align: center;">2 141 117</td>
+<td style="text-align: center;">1 310 894</td>
+<td style="text-align: center;">2 999 711</td>
+<td style="text-align: left;">1 362 089</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Joukkoliikenne ja muut liikkumisen palvelut</td>
+<td style="text-align: center;">2 051 819</td>
+<td style="text-align: center;">1 454 395</td>
+<td style="text-align: center;">1 610 124</td>
+<td style="text-align: center;">1 797 278</td>
+<td style="text-align: center;">1 705 751</td>
+<td style="text-align: center;">3 204 429</td>
+<td style="text-align: left;">780 053</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kadut ja yleiset alueet</td>
+<td style="text-align: center;">1 912 994</td>
+<td style="text-align: center;">2 584 354</td>
+<td style="text-align: center;">5 762 145</td>
+<td style="text-align: center;">9 424 138</td>
+<td style="text-align: center;">1 685 217</td>
+<td style="text-align: center;">7 159 793</td>
+<td style="text-align: left;">1 694 942</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Työllisyyden edistäminen</td>
+<td style="text-align: center;">1 777 532</td>
+<td style="text-align: center;">1 227 867</td>
+<td style="text-align: center;">1 730 492</td>
+<td style="text-align: center;">1 374 203</td>
+<td style="text-align: center;">1 005 847</td>
+<td style="text-align: center;">2 641 991</td>
+<td style="text-align: left;">1 776 233</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Työllisyyden edistämisen rahoituspalvelut</td>
+<td style="text-align: center;">1 777 532</td>
+<td style="text-align: center;">1 227 867</td>
+<td style="text-align: center;">1 730 492</td>
+<td style="text-align: center;">1 374 203</td>
+<td style="text-align: center;">1 005 847</td>
+<td style="text-align: center;">2 641 991</td>
+<td style="text-align: left;">1 776 233</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vesihuoltopalvelun tuottaminen, talousvesi</td>
+<td style="text-align: center;">1 603 906</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">51 468</td>
+<td style="text-align: center;">1 627 397</td>
+<td style="text-align: left;">1 205 053</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asemakaavoitus</td>
+<td style="text-align: center;">1 570 951</td>
+<td style="text-align: center;">503 799</td>
+<td style="text-align: center;">611 611</td>
+<td style="text-align: center;">346 134</td>
+<td style="text-align: center;">254 950</td>
+<td style="text-align: center;">547 687</td>
+<td style="text-align: left;">344 881</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kirjastopalvelut</td>
+<td style="text-align: center;">1 407 944</td>
+<td style="text-align: center;">1 176 212</td>
+<td style="text-align: center;">993 254</td>
+<td style="text-align: center;">1 340 542</td>
+<td style="text-align: center;">952 640</td>
+<td style="text-align: center;">1 978 690</td>
+<td style="text-align: left;">1 000 146</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yleisen kulttuuritoiminnan palvelut</td>
+<td style="text-align: center;">1 192 147</td>
+<td style="text-align: center;">257 724</td>
+<td style="text-align: center;">464 895</td>
+<td style="text-align: center;">213 630</td>
+<td style="text-align: center;">301 390</td>
+<td style="text-align: center;">602 084</td>
+<td style="text-align: left;">386 917</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Elinkeinojen edistäminen</td>
+<td style="text-align: center;">1 077 009</td>
+<td style="text-align: center;">769 699</td>
+<td style="text-align: center;">1 024 598</td>
+<td style="text-align: center;">811 069</td>
+<td style="text-align: center;">50 594</td>
+<td style="text-align: center;">498 115</td>
+<td style="text-align: left;">508 988</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Puistot ja viheralueet</td>
+<td style="text-align: center;">991 736</td>
+<td style="text-align: center;">450 904</td>
+<td style="text-align: center;">702 804</td>
+<td style="text-align: center;">615 229</td>
+<td style="text-align: center;">658 675</td>
+<td style="text-align: center;">432 360</td>
+<td style="text-align: left;">268 850</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Paikkatietopalvelut</td>
+<td style="text-align: center;">887 716</td>
+<td style="text-align: center;">312 473</td>
+<td style="text-align: center;">551 158</td>
+<td style="text-align: center;">54 783</td>
+<td style="text-align: center;">84 984</td>
+<td style="text-align: center;">826 372</td>
+<td style="text-align: left;">502 945</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nuorisopalvelut</td>
+<td style="text-align: center;">836 363</td>
+<td style="text-align: center;">929 718</td>
+<td style="text-align: center;">598 243</td>
+<td style="text-align: center;">867 576</td>
+<td style="text-align: center;">520 424</td>
+<td style="text-align: center;">1 256 029</td>
+<td style="text-align: left;">801 377</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Aamu-ja iltapäivätoiminta</td>
+<td style="text-align: center;">710 593</td>
+<td style="text-align: center;">1 360 965</td>
+<td style="text-align: center;">524 937</td>
+<td style="text-align: center;">981 127</td>
+<td style="text-align: center;">1 276 653</td>
+<td style="text-align: center;">384 871</td>
+<td style="text-align: left;">224 067</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rakennusvalvonta</td>
+<td style="text-align: center;">621 530</td>
+<td style="text-align: center;">411 539</td>
+<td style="text-align: center;">549 776</td>
+<td style="text-align: center;">595 327</td>
+<td style="text-align: center;">426 249</td>
+<td style="text-align: center;">267 585</td>
+<td style="text-align: left;">365 124</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Työllisyyspalvelut</td>
+<td style="text-align: center;">617 027</td>
+<td style="text-align: center;">168 487</td>
+<td style="text-align: center;">808 749</td>
+<td style="text-align: center;">1 907 980</td>
+<td style="text-align: center;">209 686</td>
+<td style="text-align: center;">561 693</td>
+<td style="text-align: left;">693 794</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pysäköinnin järjestäminen ja valvonta</td>
+<td style="text-align: center;">546 524</td>
+<td style="text-align: center;">5 235</td>
+<td style="text-align: center;">122 032</td>
+<td style="text-align: center;">22 151</td>
+<td style="text-align: center;">5 795</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ympäristönsuojelun lupa- ja valvontatehtävät</td>
+<td style="text-align: center;">334 335</td>
+<td style="text-align: center;">233 269</td>
+<td style="text-align: center;">150 166</td>
+<td style="text-align: center;">167 270</td>
+<td style="text-align: center;">113 379</td>
+<td style="text-align: center;">611 135</td>
+<td style="text-align: left;">533 793</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Museopalvelut</td>
+<td style="text-align: center;">288 625</td>
+<td style="text-align: center;">39 481</td>
+<td style="text-align: center;">109 787</td>
+<td style="text-align: center;">51 988</td>
+<td style="text-align: center;">25 510</td>
+<td style="text-align: center;">294 668</td>
+<td style="text-align: left;">109 113</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kunnallinen rakennuttaminen</td>
+<td style="text-align: center;">250 370</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Taiteen perusopetus</td>
+<td style="text-align: center;">171 268</td>
+<td style="text-align: center;">16 995</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">313 610</td>
+<td style="text-align: center;">11 500</td>
+<td style="text-align: center;">243 178</td>
+<td style="text-align: left;">91 398</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Perhepäivähoito</td>
+<td style="text-align: center;">130 727</td>
+<td style="text-align: center;">525 792</td>
+<td style="text-align: center;">925 989</td>
+<td style="text-align: center;">497 633</td>
+<td style="text-align: center;">304 754</td>
+<td style="text-align: center;">525 830</td>
+<td style="text-align: left;">171 837</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Vaalien järjestäminen</td>
+<td style="text-align: center;">96 006</td>
+<td style="text-align: center;">64 784</td>
+<td style="text-align: center;">84 420</td>
+<td style="text-align: center;">71 826</td>
+<td style="text-align: center;">79 334</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">54 056</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Asumisen kehittämisen koordinointi</td>
+<td style="text-align: center;">94 809</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">22 770</td>
+<td style="text-align: center;">37 799</td>
+<td style="text-align: center;">30 189</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Maaseutupalvelut</td>
+<td style="text-align: center;">86 752</td>
+<td style="text-align: center;">360 509</td>
+<td style="text-align: center;">36 472</td>
+<td style="text-align: center;">88 462</td>
+<td style="text-align: center;">34 560</td>
+<td style="text-align: center;">88 985</td>
+<td style="text-align: left;">77 354</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kansalaisopistokoulutuksen maksullinen palvelutoiminta</td>
+<td style="text-align: center;">83 833</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">134 773</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">143</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Vesihuollon järjestäminen, hulevesiviemäröinti</td>
+<td style="text-align: center;">63 755</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">29 552</td>
+<td style="text-align: left;">5 310</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maa- ja metsätaloustuotteet</td>
+<td style="text-align: center;">56 467</td>
+<td style="text-align: center;">60 500</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">95 744</td>
+<td style="text-align: center;">27 348</td>
+<td style="text-align: center;">46 357</td>
+<td style="text-align: left;">59 922</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Alueiden kehittäminen</td>
+<td style="text-align: center;">31 444</td>
+<td style="text-align: center;">255 542</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">340 187</td>
+<td style="text-align: center;">153 981</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">161 681</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vesihuollon järjestäminen ja kehittäminen</td>
+<td style="text-align: center;">24 612</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">40 075</td>
+<td style="text-align: center;">608 671</td>
+<td style="text-align: center;">825 035</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Visuaalisen taiteen palvelut</td>
+<td style="text-align: center;">18 225</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">38 784</td>
+<td style="text-align: center;">73 521</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">33 560</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Musiikkipalvelut</td>
+<td style="text-align: center;">8 820</td>
+<td style="text-align: center;">12 831</td>
+<td style="text-align: center;">113 791</td>
+<td style="text-align: center;">80 095</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Teatteri-, tanssi- ja sirkuspalvelut</td>
+<td style="text-align: center;">8 521</td>
+<td style="text-align: center;">1 183</td>
+<td style="text-align: center;">69 664</td>
+<td style="text-align: center;">26 511</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kansalaisopistokoulutus</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">199 655</td>
+<td style="text-align: center;">3 475 996</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">209 216</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">71 906</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muu opetus- ja kasvatustoiminta</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">281 750</td>
+<td style="text-align: center;">168 979</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">198 630</td>
+<td style="text-align: left;">4 974</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Yleiskaavoitus</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">167 933</td>
+<td style="text-align: center;">273 700</td>
+<td style="text-align: center;">346 134</td>
+<td style="text-align: center;">341 654</td>
+<td style="text-align: center;">331 217</td>
+<td style="text-align: left;">90 459</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kiinteistön muodostaminen</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">104 158</td>
+<td style="text-align: center;">186 929</td>
+<td style="text-align: center;">54 783</td>
+<td style="text-align: center;">42 492</td>
+<td style="text-align: center;">344 322</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ympäristönsuojelun kehittämis- ja edistämistehtävät</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">25 007</td>
+<td style="text-align: center;">131 589</td>
+<td style="text-align: center;">41 817</td>
+<td style="text-align: center;">112 924</td>
+<td style="text-align: center;">1 193</td>
+<td style="text-align: left;">75 737</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asuntojen vuokrauspalvelut</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">58 192</td>
+<td style="text-align: center;">44 639</td>
+<td style="text-align: center;">70 462</td>
+<td style="text-align: center;">418 503</td>
+<td style="text-align: left;">25 481</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maaomaisuuden hallinta</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">126 288</td>
+<td style="text-align: center;">512 736</td>
+<td style="text-align: center;">335 563</td>
+<td style="text-align: center;">77 515</td>
+<td style="text-align: center;">413 872</td>
+<td style="text-align: left;">305 608</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hulevesijärjestelmän hallinta</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">183 062</td>
+<td style="text-align: center;">495 027</td>
+<td style="text-align: center;">27 301</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Energiahuoltopalvelut</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">56 420</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Jätehuollon palvelutehtävät</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">23 412</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">114 695</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Lähde:</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0;">
+<sup></sup> Valtiokonttori - KKTPP - Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</section><section id="toimintamenot---per-asukas" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="toimintamenot---per-asukas">
+<span class="header-section-number">3.2</span> Toimintamenot - € per asukas</h2>
+<div class="cell" data-hash="palveluluokat_cache/html/KKTPP - palveluluokkakohtainen raportti, yhteenveto euroa per asukas_7ebf28a4e2d01f7a03993878d8e0dc6b">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6939fe0798a15f549076" style="width:100%;height:1000px;"></div>
+<script type="application/json" data-for="htmlwidget-6939fe0798a15f549076">{"x":{"visdat":{"1308759a2008":["function () ","plotlyVisDat"]},"cur_data":"1308759a2008","attrs":{"1308759a2008":{"x":[81.5,2.9100000000000001,484.16000000000003,3.9700000000000002,62.890000000000001,83.959999999999994,759.88999999999999,21.559999999999999,77.159999999999997,0,2.54,5.2000000000000002,0,42.719999999999999,73.920000000000002,25.379999999999999,8.7599999999999998,0.55000000000000004,0.26000000000000001,0.27000000000000002,36.170000000000002,47.659999999999997,0,26.93,0,18.859999999999999,2.8799999999999999,0,10.140000000000001,58.039999999999999,16.579999999999998,30.09,7.5999999999999996,315.07999999999998,0,0,453.06,32.68,18.719999999999999,53.93,53.93,2.6299999999999999,0.75,48.659999999999997,100.36,0,1.9299999999999999,0,0,62.25,1.71,0.94999999999999996],"y":{},"mode":"markers","marker":{"color":"rgb(222,35,47)"},"name":"Kangasala - per/asukas","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"1308759a2008.1":{"x":[121.29000000000001,2.6400000000000001,506.42000000000002,21.390000000000001,91.150000000000006,55.93,919.10000000000002,55.369999999999997,95.280000000000001,8.1199999999999992,0,0.68999999999999995,11.460000000000001,47.850000000000001,-12.279999999999999,37.82,1.6100000000000001,0,0.050000000000000003,0.52000000000000002,10.49,20.5,6.8300000000000001,12.710000000000001,4.2400000000000002,16.739999999999998,0,1.02,9.4900000000000002,105.14,0.20999999999999999,18.34,0,552.74000000000001,0,5.1399999999999997,459.47000000000003,31.309999999999999,6.8499999999999996,49.950000000000003,49.950000000000003,14.67,0,0,0,0,0,2.2999999999999998,0.94999999999999996,59.170000000000002,2.46,10.4],"y":{},"mode":"markers","marker":{"color":"rgb(55,126,184)"},"name":"Lempäälä - per/asukas","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"1308759a2008.2":{"x":[71.579999999999998,2.3900000000000001,407.38,26.199999999999999,102.86,58.25,800.34000000000003,14.85,68.530000000000001,98.340000000000003,3.8100000000000001,0,4.7800000000000002,28.100000000000001,45.560000000000002,16.93,3.1099999999999999,1.1000000000000001,1.97,3.2200000000000002,13.15,17.300000000000001,7.7400000000000002,15.59,5.29,15.550000000000001,0.64000000000000001,3.7200000000000002,4.25,163.02000000000001,3.4500000000000002,19.879999999999999,0,374.68000000000001,1.6499999999999999,14.51,474.26999999999998,28.989999999999998,22.879999999999999,48.960000000000001,48.960000000000001,1.03,0,0,0,5.1799999999999997,0,0,0,45.549999999999997,0,0],"y":{},"mode":"markers","marker":{"color":"rgb(77,175,74)"},"name":"Nokia - per/asukas","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"1308759a2008.3":{"x":[73.870000000000005,2.1400000000000001,555.87,14.81,63.710000000000001,46,918.04999999999995,29.190000000000001,94.319999999999993,0,0,9.3300000000000001,0,39.890000000000001,55.609999999999999,25.82,1.55,2.1899999999999999,0.79000000000000004,2.3799999999999999,6.3600000000000003,10.300000000000001,10.300000000000001,1.6299999999999999,1.6299999999999999,17.710000000000001,1.1200000000000001,1.24,4.9800000000000004,280.42000000000002,0.66000000000000003,18.309999999999999,0,383,1.3300000000000001,9.9800000000000004,458,24.129999999999999,56.770000000000003,40.890000000000001,40.890000000000001,2.6299999999999999,1.1899999999999999,0,0,14.73,0,0,0,53.479999999999997,2.8500000000000001,10.119999999999999],"y":{},"mode":"markers","marker":{"color":"rgb(152,78,163)"},"name":"Ylöjärvi - per/asukas","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"1308759a2008.4":{"x":[118.63,3.8900000000000001,529.90999999999997,14.94,64.239999999999995,65.680000000000007,901.84000000000003,62.57,71.810000000000002,10.25,0,0.56000000000000005,0,46.689999999999998,62.689999999999998,25.5,1.25,0,0,0,14.77,12.49,16.739999999999998,4.1600000000000001,2.0800000000000001,20.890000000000001,1.48,5.5300000000000002,5.5599999999999996,82.590000000000003,0.28000000000000003,32.280000000000001,0,497.93000000000001,3.4500000000000002,3.7999999999999998,495.35000000000002,2.48,10.279999999999999,49.289999999999999,49.289999999999999,1.6899999999999999,29.829999999999998,2.52,2.1099999999999999,1.3400000000000001,0,0,0,83.590000000000003,1.3400000000000001,7.5499999999999998],"y":{},"mode":"markers","marker":{"color":"rgb(255,127,0)"},"name":"Pirkkala - per/asukas","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"1308759a2008.5":{"x":[57.719999999999999,0,541.71000000000004,11.83,67.469999999999999,64.390000000000001,899.91999999999996,8.6600000000000001,52.259999999999998,0,0,5.4699999999999998,4.4699999999999998,44.509999999999998,65,28.25,6.6299999999999999,0,0,0,13.539999999999999,12.32,7.4500000000000002,18.59,7.7400000000000002,6.0199999999999996,0,0.029999999999999999,13.75,161.05000000000001,0,9.7300000000000004,0,300.56,9.4100000000000001,9.3100000000000005,337.47000000000003,11.199999999999999,12.630000000000001,59.43,59.43,2,18.559999999999999,36.609999999999999,47.939999999999998,0,0.66000000000000003,0,2.5800000000000001,72.079999999999998,1.04,0],"y":{},"mode":"markers","marker":{"color":"rgb(247,129,191)"},"name":"Nurmijärvi - per/asukas","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"1308759a2008.6":{"x":[83.659999999999997,1.8700000000000001,455.89999999999998,5.9400000000000004,47.109999999999999,50.689999999999998,830.15999999999997,7.75,100.03,2.4900000000000002,0,3.1600000000000001,0.17000000000000001,34.590000000000003,38.109999999999999,27.719999999999999,3.77,1.1599999999999999,0,0,13.380000000000001,11.93,3.1299999999999999,17.399999999999999,0,12.630000000000001,0,2.6200000000000001,18.460000000000001,58.619999999999997,0,9.3000000000000007,0,284.13,0.88,10.57,350.83999999999997,17.600000000000001,24,61.43,61.43,2.6800000000000002,0,41.68,44.829999999999998,0,0.17999999999999999,0,0,26.98,2.0699999999999998,5.5899999999999999],"y":{},"mode":"markers","marker":{"color":"rgb(166,86,40)"},"name":"Vihti - per/asukas","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":20,"l":50,"t":100,"r":50,"pad":2},"autosize":"T","title":{"text":"Toimintakulut - € per asukas","font":{"size":14,"color":"rgba(0,0,0)"}},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","yaxis":{"domain":[0,1],"automargin":true,"title":"<b><\/b>","tickformat":"d","tickfont":{"size":9,"color":"rgba(0,0,0)"},"type":"category","categoryorder":"array","categoryarray":["Aamu-ja iltapäivätoiminta","Alueiden kehittäminen","Asemakaavoitus","Asumisen kehittämisen koordinointi","Asuntojen vuokrauspalvelut","Elinkeinojen edistäminen","Energiahuoltopalvelut","Esiopetus","Hulevesijärjestelmän hallinta","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Kadut ja yleiset alueet","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Kansalaisopistokoulutus","Kiinteistön muodostaminen","Kirjastopalvelut","Kunnallinen rakennuttaminen","Liikunta- ja ulkoilupalvelut","Lukiokoulutus","Maa- ja metsätaloustuotteet","Maaomaisuuden hallinta","Maaseutupalvelut","Museopalvelut","Musiikkipalvelut","Muu opetus- ja kasvatustoiminta","Muu varhaiskasvatus","Nuorisopalvelut","Paikkatietopalvelut","Päiväkotitoiminta","Perhepäivähoito","Perusopetus","Puistot ja viheralueet","Pysäköinnin järjestäminen ja valvonta","Rakennusvalvonta","Taiteen perusopetus","Teatteri-, tanssi- ja sirkuspalvelut","Tilavuokrauspalvelut","Tukipalvelu","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Työllisyyspalvelut","Vaalien järjestäminen","Vesihuollon järjestäminen ja kehittäminen","Vesihuollon järjestäminen, hulevesiviemäröinti","Vesihuoltopalvelun tuottaminen, jätevesi","Vesihuoltopalvelun tuottaminen, talousvesi","Visuaalisen taiteen palvelut","Yleisen kulttuuritoiminnan palvelut","Yleishallintopalvelut","Yleiskaavoitus","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät"]},"xaxis":{"domain":[0,1],"automargin":true,"title":[]},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"toImageButtonOptions":{"format":"png","filename":"palveluluokat","height":800,"width":1200,"scale":2}},"data":[{"x":[81.5,2.9100000000000001,484.16000000000003,3.9700000000000002,62.890000000000001,83.959999999999994,759.88999999999999,21.559999999999999,77.159999999999997,0,2.54,5.2000000000000002,0,42.719999999999999,73.920000000000002,25.379999999999999,8.7599999999999998,0.55000000000000004,0.26000000000000001,0.27000000000000002,36.170000000000002,47.659999999999997,0,26.93,0,18.859999999999999,2.8799999999999999,0,10.140000000000001,58.039999999999999,16.579999999999998,30.09,7.5999999999999996,315.07999999999998,0,0,453.06,32.68,18.719999999999999,53.93,53.93,2.6299999999999999,0.75,48.659999999999997,100.36,0,1.9299999999999999,0,0,62.25,1.71,0.94999999999999996],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(222,35,47)","line":{"color":"rgba(31,119,180,1)"}},"name":"Kangasala - per/asukas","type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[121.29000000000001,2.6400000000000001,506.42000000000002,21.390000000000001,91.150000000000006,55.93,919.10000000000002,55.369999999999997,95.280000000000001,8.1199999999999992,0,0.68999999999999995,11.460000000000001,47.850000000000001,-12.279999999999999,37.82,1.6100000000000001,0,0.050000000000000003,0.52000000000000002,10.49,20.5,6.8300000000000001,12.710000000000001,4.2400000000000002,16.739999999999998,0,1.02,9.4900000000000002,105.14,0.20999999999999999,18.34,0,552.74000000000001,0,5.1399999999999997,459.47000000000003,31.309999999999999,6.8499999999999996,49.950000000000003,49.950000000000003,14.67,0,0,0,0,0,2.2999999999999998,0.94999999999999996,59.170000000000002,2.46,10.4],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(55,126,184)","line":{"color":"rgba(255,127,14,1)"}},"name":"Lempäälä - per/asukas","type":"scatter","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[71.579999999999998,2.3900000000000001,407.38,26.199999999999999,102.86,58.25,800.34000000000003,14.85,68.530000000000001,98.340000000000003,3.8100000000000001,0,4.7800000000000002,28.100000000000001,45.560000000000002,16.93,3.1099999999999999,1.1000000000000001,1.97,3.2200000000000002,13.15,17.300000000000001,7.7400000000000002,15.59,5.29,15.550000000000001,0.64000000000000001,3.7200000000000002,4.25,163.02000000000001,3.4500000000000002,19.879999999999999,0,374.68000000000001,1.6499999999999999,14.51,474.26999999999998,28.989999999999998,22.879999999999999,48.960000000000001,48.960000000000001,1.03,0,0,0,5.1799999999999997,0,0,0,45.549999999999997,0,0],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(77,175,74)","line":{"color":"rgba(44,160,44,1)"}},"name":"Nokia - per/asukas","type":"scatter","error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[73.870000000000005,2.1400000000000001,555.87,14.81,63.710000000000001,46,918.04999999999995,29.190000000000001,94.319999999999993,0,0,9.3300000000000001,0,39.890000000000001,55.609999999999999,25.82,1.55,2.1899999999999999,0.79000000000000004,2.3799999999999999,6.3600000000000003,10.300000000000001,10.300000000000001,1.6299999999999999,1.6299999999999999,17.710000000000001,1.1200000000000001,1.24,4.9800000000000004,280.42000000000002,0.66000000000000003,18.309999999999999,0,383,1.3300000000000001,9.9800000000000004,458,24.129999999999999,56.770000000000003,40.890000000000001,40.890000000000001,2.6299999999999999,1.1899999999999999,0,0,14.73,0,0,0,53.479999999999997,2.8500000000000001,10.119999999999999],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(152,78,163)","line":{"color":"rgba(214,39,40,1)"}},"name":"Ylöjärvi - per/asukas","type":"scatter","error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"line":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[118.63,3.8900000000000001,529.90999999999997,14.94,64.239999999999995,65.680000000000007,901.84000000000003,62.57,71.810000000000002,10.25,0,0.56000000000000005,0,46.689999999999998,62.689999999999998,25.5,1.25,0,0,0,14.77,12.49,16.739999999999998,4.1600000000000001,2.0800000000000001,20.890000000000001,1.48,5.5300000000000002,5.5599999999999996,82.590000000000003,0.28000000000000003,32.280000000000001,0,497.93000000000001,3.4500000000000002,3.7999999999999998,495.35000000000002,2.48,10.279999999999999,49.289999999999999,49.289999999999999,1.6899999999999999,29.829999999999998,2.52,2.1099999999999999,1.3400000000000001,0,0,0,83.590000000000003,1.3400000000000001,7.5499999999999998],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(255,127,0)","line":{"color":"rgba(148,103,189,1)"}},"name":"Pirkkala - per/asukas","type":"scatter","error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[57.719999999999999,0,541.71000000000004,11.83,67.469999999999999,64.390000000000001,899.91999999999996,8.6600000000000001,52.259999999999998,0,0,5.4699999999999998,4.4699999999999998,44.509999999999998,65,28.25,6.6299999999999999,0,0,0,13.539999999999999,12.32,7.4500000000000002,18.59,7.7400000000000002,6.0199999999999996,0,0.029999999999999999,13.75,161.05000000000001,0,9.7300000000000004,0,300.56,9.4100000000000001,9.3100000000000005,337.47000000000003,11.199999999999999,12.630000000000001,59.43,59.43,2,18.559999999999999,36.609999999999999,47.939999999999998,0,0.66000000000000003,0,2.5800000000000001,72.079999999999998,1.04,0],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(247,129,191)","line":{"color":"rgba(140,86,75,1)"}},"name":"Nurmijärvi - per/asukas","type":"scatter","error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"line":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[83.659999999999997,1.8700000000000001,455.89999999999998,5.9400000000000004,47.109999999999999,50.689999999999998,830.15999999999997,7.75,100.03,2.4900000000000002,0,3.1600000000000001,0.17000000000000001,34.590000000000003,38.109999999999999,27.719999999999999,3.77,1.1599999999999999,0,0,13.380000000000001,11.93,3.1299999999999999,17.399999999999999,0,12.630000000000001,0,2.6200000000000001,18.460000000000001,58.619999999999997,0,9.3000000000000007,0,284.13,0.88,10.57,350.83999999999997,17.600000000000001,24,61.43,61.43,2.6800000000000002,0,41.68,44.829999999999998,0,0.17999999999999999,0,0,26.98,2.0699999999999998,5.5899999999999999],"y":["Yleishallintopalvelut","Vaalien järjestäminen","Päiväkotitoiminta","Perhepäivähoito","Muu varhaiskasvatus","Esiopetus","Perusopetus","Aamu-ja iltapäivätoiminta","Lukiokoulutus","Kansalaisopistokoulutus","Kansalaisopistokoulutuksen maksullinen palvelutoiminta","Taiteen perusopetus","Muu opetus- ja kasvatustoiminta","Kirjastopalvelut","Liikunta- ja ulkoilupalvelut","Nuorisopalvelut","Museopalvelut","Visuaalisen taiteen palvelut","Teatteri-, tanssi- ja sirkuspalvelut","Musiikkipalvelut","Yleisen kulttuuritoiminnan palvelut","Asemakaavoitus","Yleiskaavoitus","Paikkatietopalvelut","Kiinteistön muodostaminen","Rakennusvalvonta","Asumisen kehittämisen koordinointi","Ympäristönsuojelun kehittämis- ja edistämistehtävät","Ympäristönsuojelun lupa- ja valvontatehtävät","Kadut ja yleiset alueet","Pysäköinnin järjestäminen ja valvonta","Puistot ja viheralueet","Kunnallinen rakennuttaminen","Tilavuokrauspalvelut","Asuntojen vuokrauspalvelut","Maaomaisuuden hallinta","Tukipalvelu","Elinkeinojen edistäminen","Työllisyyspalvelut","Työllisyyden edistäminen","Työllisyyden edistämisen rahoituspalvelut","Maaseutupalvelut","Vesihuollon järjestäminen ja kehittäminen","Vesihuoltopalvelun tuottaminen, talousvesi","Vesihuoltopalvelun tuottaminen, jätevesi","Hulevesijärjestelmän hallinta","Vesihuollon järjestäminen, hulevesiviemäröinti","Energiahuoltopalvelut","Jätehuollon palvelutehtävät","Joukkoliikenne ja muut liikkumisen palvelut","Maa- ja metsätaloustuotteet","Alueiden kehittäminen"],"mode":"markers","marker":{"color":"rgb(166,86,40)","line":{"color":"rgba(227,119,194,1)"}},"name":"Vihti - per/asukas","type":"scatter","error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"line":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" data-hash="palveluluokat_cache/html/KKTPP - palveluluokkakohtainen raportti, yhteenveto eurot per asukas tbl_603ee5c70868e8420a4c4369142524b4">
+<div class="cell-output-display">
+<table class="lightable-classic lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Toimintakulut - € per asukas</caption>
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">palveluluokka</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Kangasala - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Lempäälä - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nokia - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Ylöjärvi - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Pirkkala - per/asukas</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nurmijärvi - per/asukas</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Vihti - per/asukas</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Perusopetus</td>
+<td style="text-align: center;">760</td>
+<td style="text-align: center;">919</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: center;">918</td>
+<td style="text-align: center;">902</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;">830</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Päiväkotitoiminta</td>
+<td style="text-align: center;">484</td>
+<td style="text-align: center;">506</td>
+<td style="text-align: center;">407</td>
+<td style="text-align: center;">556</td>
+<td style="text-align: center;">530</td>
+<td style="text-align: center;">542</td>
+<td style="text-align: left;">456</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tukipalvelu</td>
+<td style="text-align: center;">453</td>
+<td style="text-align: center;">459</td>
+<td style="text-align: center;">474</td>
+<td style="text-align: center;">458</td>
+<td style="text-align: center;">495</td>
+<td style="text-align: center;">337</td>
+<td style="text-align: left;">351</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tilavuokrauspalvelut</td>
+<td style="text-align: center;">315</td>
+<td style="text-align: center;">553</td>
+<td style="text-align: center;">375</td>
+<td style="text-align: center;">383</td>
+<td style="text-align: center;">498</td>
+<td style="text-align: center;">301</td>
+<td style="text-align: left;">284</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vesihuoltopalvelun tuottaminen, jätevesi</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: left;">45</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Esiopetus</td>
+<td style="text-align: center;">84</td>
+<td style="text-align: center;">56</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: left;">51</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Yleishallintopalvelut</td>
+<td style="text-align: center;">82</td>
+<td style="text-align: center;">121</td>
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">74</td>
+<td style="text-align: center;">119</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: left;">84</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lukiokoulutus</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">69</td>
+<td style="text-align: center;">94</td>
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: left;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Liikunta- ja ulkoilupalvelut</td>
+<td style="text-align: center;">74</td>
+<td style="text-align: center;">-12</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">56</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: left;">38</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muu varhaiskasvatus</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">91</td>
+<td style="text-align: center;">103</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">64</td>
+<td style="text-align: center;">67</td>
+<td style="text-align: left;">47</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Joukkoliikenne ja muut liikkumisen palvelut</td>
+<td style="text-align: center;">62</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">53</td>
+<td style="text-align: center;">84</td>
+<td style="text-align: center;">72</td>
+<td style="text-align: left;">27</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kadut ja yleiset alueet</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">163</td>
+<td style="text-align: center;">280</td>
+<td style="text-align: center;">83</td>
+<td style="text-align: center;">161</td>
+<td style="text-align: left;">59</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Työllisyyden edistäminen</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">41</td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: left;">61</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Työllisyyden edistämisen rahoituspalvelut</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">41</td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: left;">61</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vesihuoltopalvelun tuottaminen, talousvesi</td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: left;">42</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asemakaavoitus</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kirjastopalvelut</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">47</td>
+<td style="text-align: center;">45</td>
+<td style="text-align: left;">35</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yleisen kulttuuritoiminnan palvelut</td>
+<td style="text-align: center;">36</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Elinkeinojen edistäminen</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Puistot ja viheralueet</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Paikkatietopalvelut</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: left;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nuorisopalvelut</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: left;">28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Aamu-ja iltapäivätoiminta</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rakennusvalvonta</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Työllisyyspalvelut</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">57</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;">24</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pysäköinnin järjestäminen ja valvonta</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ympäristönsuojelun lupa- ja valvontatehtävät</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Museopalvelut</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kunnallinen rakennuttaminen</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Taiteen perusopetus</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Perhepäivähoito</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Vaalien järjestäminen</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kansalaisopistokoulutuksen maksullinen palvelutoiminta</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asumisen kehittämisen koordinointi</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maaseutupalvelut</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Vesihuollon järjestäminen, hulevesiviemäröinti</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maa- ja metsätaloustuotteet</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Visuaalisen taiteen palvelut</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vesihuollon järjestäminen ja kehittäminen</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Alueiden kehittäminen</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kansalaisopistokoulutus</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muu opetus- ja kasvatustoiminta</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Teatteri-, tanssi- ja sirkuspalvelut</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Musiikkipalvelut</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Yleiskaavoitus</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kiinteistön muodostaminen</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ympäristönsuojelun kehittämis- ja edistämistehtävät</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Asuntojen vuokrauspalvelut</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maaomaisuuden hallinta</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hulevesijärjestelmän hallinta</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Energiahuoltopalvelut</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Jätehuollon palvelutehtävät</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">0</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Lähde:</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0;">
+<sup></sup> Valtiokonttori - KKTPP - Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-valtiokonttori_palveluluokat" class="csl-entry" role="listitem">
+Valtiokonttori. 2023. <em>Kunnan tilinpäätöstiedot palveluluokkakohtaisesti</em>. Valtiokonttori. <a href="https://www.tutkihallintoa.fi/kunnat/talous/kunnan-tilinpaatostiedot-palveluluokkakohtaisesti-kayttotalous-investoinnit/">https://www.tutkihallintoa.fi/kunnat/talous/kunnan-tilinpaatostiedot-palveluluokkakohtaisesti-kayttotalous-investoinnit/</a>.
+</div>
+</div>
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Kopioitu!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Kopioitu!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./talous.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Kuntien neljännesvuosiraportointi - vertailuajankohta (vuoden 2022 tiedot)</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./yleishallinto.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Yleishallinto ja vaalit</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+<li class="nav-item">
+ Kangasalan kaupunki 2022
+  </li>  
+</ul>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+</body></html>
